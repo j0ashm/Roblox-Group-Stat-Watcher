@@ -69,4 +69,6 @@ cron.schedule('0 0 * * *', async () => {
     await createInformationalEmbed(HREGroupIds, webhookClientHRE);
     
     console.log('All jobs completed.')
+}, {
+    timezone: 'Europe/London'
 });
